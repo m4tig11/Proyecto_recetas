@@ -5,7 +5,13 @@ color white
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 id cardView
+id cardViewIngredientes
+id cardViewInstrucciones
 id contenedorTarjetas
+id imageViewReceta
+id textViewInstrucciones
+id textViewTituloReceta
+layout activity_detalles_receta
 layout activity_main
 layout activity_resultados
 mipmap ic_launcher

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.recetasapp-mergeDebugResources-23:/values-v16/values-v16.xml",
+            "outputFile": "com.example.recetasapp-mergeDebugResources-42:/values-v16/values-v16.xml",
             "map": [
                 {
                     "source": "C:\\Users\\matia\\.gradle\\caches\\transforms-3\\d9d1afb6ad095e0764ca0e46a5f90d88\\transformed\\core-1.8.0\\res\\values-v16\\values-v16.xml",

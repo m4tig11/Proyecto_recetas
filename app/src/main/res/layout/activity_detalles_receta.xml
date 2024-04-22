@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_detalles_receta.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".RecetaInstrucciones">
+
+    <!-- ImageView para la imagen de la receta -->
+    <ImageView
+        android:id="@+id/imageViewReceta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:src="@android:drawable/ic_menu_report_image"
+    android:layout_marginTop="16dp" />
+
+
+    <!-- TextView para el título de la receta -->
+    <TextView
+        android:id="@+id/textViewTituloReceta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Título de la Receta"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:layout_below="@id/imageViewReceta" />
+
+    <!-- Tarjeta para los ingredientes -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewIngredientes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTituloReceta"
+        android:layout_margin="16dp">
+
+        <!-- Contenido de la tarjeta de ingredientes -->
+        <!-- Puedes personalizar el contenido aquí, como agregar una lista de ingredientes -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingredientes"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Aquí puedes agregar la lista de ingredientes -->
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Tarjeta para las instrucciones -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewInstrucciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardViewIngredientes"
+        android:layout_margin="16dp">
+
+        <!-- Contenido de la tarjeta de instrucciones -->
+        <!-- Puedes personalizar el contenido aquí, como agregar las instrucciones de la receta -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Instrucciones"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewInstrucciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Instrucciones"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="16dp"
+                android:layout_below="@id/cardViewInstrucciones" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

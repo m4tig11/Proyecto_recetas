@@ -1,6 +1,8 @@
 package com.example.recetasapp
 
+
 import android.content.Context
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
@@ -19,7 +21,6 @@ import java.io.InputStreamReader
 import java.net.HttpURLConnection
 import java.net.URL
 import com.google.gson.Gson
-import com.google.gson.reflect.TypeToken
 import com.squareup.picasso.Picasso
 
 class MainActivity : AppCompatActivity() {
@@ -41,8 +42,13 @@ class MainActivity : AppCompatActivity() {
                 // Ahora puedes trabajar con la lista de recetas obtenida
                 response.results.forEach { recipe ->
                     runOnUiThread {
-                        // Aquí actualizas la interfaz de usuario con los datos de la receta
                         val cardView = createCardViewForRecipe(recipe)
+                        cardView.setOnClickListener {
+                            // Al hacer clic en la tarjeta, abrir la nueva actividad con los detalles de la receta
+                            val intent = Intent(this@MainActivity, DetallesRecetaActivity::class.java)
+                            intent.putExtra("recipe_id", recipe.id)
+                            startActivity(intent)
+                        }
                         findViewById<LinearLayout>(R.id.contenedorTarjetas).addView(cardView)
                     }
                 }
@@ -71,7 +77,6 @@ class MainActivity : AppCompatActivity() {
         )
         relativeLayout.setBackgroundColor(Color.WHITE) // Fondo blanco para la tarjeta
 
-        // Crear un ImageView para la imagen de la receta
         // Crear un ImageView para la imagen de la receta
         val imageView = ImageView(this@MainActivity)
         imageView.id = View.generateViewId() // Asignar un ID único al ImageView
@@ -106,13 +111,8 @@ class MainActivity : AppCompatActivity() {
         textView.textSize = 18f // Tamaño de texto
         textView.setTypeface(null, Typeface.BOLD) // Texto en negrita
 
-// Agregar el TextView al RelativeLayout
+        // Agregar el TextView al RelativeLayout
         relativeLayout.addView(textView)
-
-
-
-
-
         // Agregar el RelativeLayout (tarjeta) al CardView
         cardView.addView(relativeLayout)
 
