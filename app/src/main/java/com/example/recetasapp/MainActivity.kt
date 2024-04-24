@@ -47,6 +47,8 @@ class MainActivity : AppCompatActivity() {
                             // Al hacer clic en la tarjeta, abrir la nueva actividad con los detalles de la receta
                             val intent = Intent(this@MainActivity, DetallesRecetaActivity::class.java)
                             intent.putExtra("recipe_id", recipe.id)
+                            intent.putExtra("recipe_image", recipe.image)
+                            intent.putExtra("recipe_title", recipe.title)
                             startActivity(intent)
                         }
                         findViewById<LinearLayout>(R.id.contenedorTarjetas).addView(cardView)

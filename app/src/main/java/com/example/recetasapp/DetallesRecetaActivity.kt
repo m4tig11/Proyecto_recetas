@@ -1,8 +1,10 @@
 package com.example.recetasapp
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.gson.Gson
+import com.squareup.picasso.Picasso
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -18,6 +20,10 @@ class DetallesRecetaActivity : AppCompatActivity() {
 
         // Obtener el ID de la receta pasado desde MainActivity usando intent.extras
         val recipeId = intent.getIntExtra("recipe_id", -1)
+        val recipeImage = intent.getStringExtra("recipe_image")
+        val recipeTitle = intent.getStringExtra("recipe_title")
+        findViewById<TextView>(R.id.textViewTituloReceta).text = recipeTitle
+        Picasso.get().load(recipeImage).into(findViewById<ImageView>(R.id.imageViewReceta))
 
         // Realizar la solicitud para obtener los pasos de la receta
         GlobalScope.launch(Dispatchers.IO) {
@@ -28,6 +34,7 @@ class DetallesRecetaActivity : AppCompatActivity() {
                 // Procesar y mostrar los pasos de la receta en la interfaz de usuario
                 runOnUiThread {
                     displayRecipeSteps(response)
+
                 }
             } catch (e: Exception) {
                 println("Error al obtener los pasos de la receta: ${e.message}")
@@ -36,6 +43,7 @@ class DetallesRecetaActivity : AppCompatActivity() {
     }
 
     private fun displayRecipeSteps(stepsResponse: Array<RecipeInstructionsResponse>) {
+
         // Si la respuesta contiene datos y pasos
         if (stepsResponse.isNotEmpty()) {
             val steps = stepsResponse[0].steps
