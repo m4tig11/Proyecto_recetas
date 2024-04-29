@@ -2,15 +2,21 @@ R_DEF: Internal format may change without notice
 local
 color black
 color white
+drawable button_rounded
+drawable edittext_rounded
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+id btnAgregar
 id cardView
 id cardViewIngredientes
 id cardViewInstrucciones
 id contenedorTarjetas
+id editIngredientes
 id imageViewReceta
 id textViewInstrucciones
 id textViewTituloReceta
+id txtSeleccionaIngredientes
+layout activity_buscador_recetas
 layout activity_detalles_receta
 layout activity_main
 layout activity_resultados

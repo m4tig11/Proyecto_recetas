@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3D53A0">
+
+    <TextView
+        android:id="@+id/txtSeleccionaIngredientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona ingredientes"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <RelativeLayout
+        android:id="@+id/layoutTiempo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSeleccionaIngredientes"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="30dp">
+
+        <EditText
+            android:id="@+id/editIngredientes"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="@drawable/edittext_rounded"
+            android:hint="Escribe aquí tus ingredientes"
+            android:textSize="13sp"
+            android:textColorHint="#808080"
+            android:gravity="center_vertical"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:layout_toStartOf="@+id/btnAgregar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="false"/>
+
+        <Button
+            android:id="@+id/btnAgregar"
+            android:layout_width="52dp"
+            android:layout_height="47dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="false"
+            android:gravity="center"
+            android:background="@drawable/button_rounded"
+            android:text="+"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtTiempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editIngredientes"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="7dp"
+            android:text="¿Cuánto tiempo tienes?"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutTarjetasRedondeadas"
+        android:layout_width="wrap_content"
+        android:layout_height="93dp"
+        android:layout_below="@id/layoutTiempo"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <!-- Tarjeta 1 -->
+        <RelativeLayout
+            android:layout_width="81dp"
+            android:layout_height="93dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/rounded_card"
+            android:backgroundTint="#3EDBFF"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/timeCardSimbol"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@id/textoTarjeta1"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="-74dp"/>
+
+            <TextView
+                android:id="@+id/textoTarjeta1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10\nmin"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="19sp"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+
+        <!-- Tarjeta 2 -->
+        <RelativeLayout
+            android:layout_width="81dp"
+            android:layout_height="93dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/rounded_card"
+            android:backgroundTint="#B0F0A5"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/timeCardSimbol"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@id/textoTarjeta2"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="-74dp"/>
+
+            <TextView
+                android:id="@+id/textoTarjeta2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="25\nmin"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="19sp"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+
+        <!-- Tarjeta 3 -->
+        <RelativeLayout
+            android:layout_width="81dp"
+            android:layout_height="93dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/rounded_card"
+            android:backgroundTint="#FFD09E"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/timeCardSimbol"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@id/textoTarjeta3"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="-74dp"/>
+
+            <TextView
+                android:id="@+id/textoTarjeta3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="45\nmin"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="19sp"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+
+        <!-- Tarjeta 4 -->
+        <RelativeLayout
+            android:layout_width="81dp"
+            android:layout_height="93dp"
+            android:background="@drawable/rounded_card"
+            android:backgroundTint="#FB9F9E"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/textoTarjeta4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="-74dp"
+                android:src="@drawable/timeCardSimbol" />
+
+            <TextView
+                android:id="@+id/textoTarjeta4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="60\nmin"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="19sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutTarjetasRedondeadas2"
+        android:layout_width="wrap_content"
+        android:layout_height="93dp"
+        android:layout_below="@id/layoutTarjetasRedondeadas"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#B9D5F3"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <!-- Tarjeta 5 -->
+        <RelativeLayout
+            android:layout_width="81dp"
+            android:layout_height="93dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/rounded_card"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="53dp"
+                android:layout_height="48dp"
+                android:layout_above="@id/textoTarjetaDes"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+
+                android:src="@drawable/Desayuno" />
+
+            <TextView
+                android:id="@+id/textoTarjetaDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Desayuno"
+                android:textStyle="bold"
+                android:textColor="#B9D5F3"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+
+
+        <!-- Agrega aquí las tarjetas restantes de manera similar a las anteriores -->
+
+    </LinearLayout>
+
+</RelativeLayout>

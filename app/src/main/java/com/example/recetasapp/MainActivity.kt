@@ -1,6 +1,5 @@
 package com.example.recetasapp
 
-
 import android.content.Context
 import android.content.Intent
 import android.graphics.Color

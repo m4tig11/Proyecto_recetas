@@ -4,7 +4,7 @@
             "outputFile": "com.example.recetasapp-mergeDebugResources-42:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\matia\\.gradle\\caches\\transforms-3\\d9d1afb6ad095e0764ca0e46a5f90d88\\transformed\\core-1.8.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\paola\\.gradle\\caches\\transforms-3\\d9d1afb6ad095e0764ca0e46a5f90d88\\transformed\\core-1.8.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\matia\\.gradle\\caches\\transforms-3\\5edeb6b2f97c50671381949df04f034e\\transformed\\appcompat-1.4.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\paola\\.gradle\\caches\\transforms-3\\5edeb6b2f97c50671381949df04f034e\\transformed\\appcompat-1.4.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
