@@ -196,13 +196,33 @@
 
 
     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layoutTarjetasRedondeadas"
+        android:layout_marginBottom="-169dp"
+        android:background="#B9D5F3"
+        android:paddingVertical="10dp">
+
+        <TextView
+            android:id="@+id/txtTipoComida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Tipo de comida a preparar"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
     <LinearLayout
         android:id="@+id/layoutTarjetasRedondeadas2"
         android:layout_width="wrap_content"
         android:layout_height="93dp"
         android:layout_below="@id/layoutTarjetasRedondeadas"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="66dp"
         android:background="#B9D5F3"
         android:gravity="center_horizontal"
         android:layout_centerHorizontal="true"
@@ -230,13 +250,12 @@
                 android:id="@+id/textoTarjetaDes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
                 android:text="Desayuno"
-                android:textStyle="bold"
                 android:textColor="#B9D5F3"
                 android:textSize="12dp"
-                android:gravity="center"
-                android:layout_alignParentBottom="true"
-                />
+                android:textStyle="bold" />
         </RelativeLayout>
 
 
