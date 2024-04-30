@@ -25,10 +25,10 @@ import com.squareup.picasso.Picasso
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_resultados)
+        setContentView(R.layout.activity_buscador_recetas)
 
         // Llamamos a la función para obtener las recetas
-        obtenerRecetas()
+        //obtenerRecetas()
     }
 
     private fun obtenerRecetas() {
