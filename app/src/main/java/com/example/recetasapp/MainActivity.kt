@@ -25,8 +25,9 @@ import com.squareup.picasso.Picasso
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_buscador_recetas)
 
+        val intent = Intent(this@MainActivity, BuscadorPorIngredientesActivity::class.java)
+        startActivity(intent)
         // Llamamos a la función para obtener las recetas
         //obtenerRecetas()
     }

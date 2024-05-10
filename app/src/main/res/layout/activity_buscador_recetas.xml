@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#3D53A0">
@@ -8,89 +11,112 @@
         android:id="@+id/txtSeleccionaIngredientes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         android:text="Selecciona ingredientes"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"/>
+        tools:ignore="MissingConstraints"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <RelativeLayout
         android:id="@+id/layoutTiempo"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txtSeleccionaIngredientes"
+        android:layout_height="47dp"
+        android:layout_marginHorizontal="30dp"
         android:layout_marginTop="10dp"
-        android:layout_marginHorizontal="30dp">
-
-        <EditText
-            android:id="@+id/editIngredientes"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtSeleccionaIngredientes">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="47dp"
-            android:background="@drawable/edittext_rounded"
-            android:hint="Escribe aquí tus ingredientes"
-            android:textSize="13sp"
-            android:textColorHint="#808080"
-            android:gravity="center_vertical"
-            android:paddingStart="14dp"
-            android:paddingEnd="14dp"
-            android:paddingTop="0dp"
-            android:paddingBottom="0dp"
-            android:layout_toStartOf="@+id/btnAgregar"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="false"/>
-
-        <Button
-            android:id="@+id/btnAgregar"
-            android:layout_width="52dp"
-            android:layout_height="47dp"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="false"
-            android:gravity="center"
-            android:background="@drawable/button_rounded"
-            android:text="+"
-
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/txtTiempo"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/editIngredientes"
-            android:layout_alignParentStart="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="7dp"
-            android:text="¿Cuánto tiempo tienes?"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:textSize="14sp" />
+            android:gravity="center"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/editIngredientes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_rounded"
+                android:gravity="center_vertical"
+                android:hint="Escribe aquí tus ingredientes"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:textColorHint="#808080"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/btnAgregar"
+                android:layout_width="52dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_rounded"
+                android:gravity="center"
+                android:text="+"
+                android:textSize="20sp" />
+        </LinearLayout>
 
     </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/layoutTarjetasIngredientes"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/layoutTiempo"
+        app:layout_constraintTop_toBottomOf="@id/layoutTiempo"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+    </LinearLayout>
 
+    <TextView
+        android:id="@+id/pregunta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Cuánto tiempo tienes?"
+        android:textColor="#FFFFFF"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutTarjetasIngredientes"
+        />
+
+
+    <!-- Tarjetas Redondeadas -->
     <LinearLayout
         android:id="@+id/layoutTarjetasRedondeadas"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="93dp"
-        android:layout_below="@id/layoutTiempo"
-        android:layout_marginHorizontal="20dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:gravity="center_horizontal"
-        android:layout_centerHorizontal="true"
-        android:orientation="horizontal">
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pregunta1">
 
         <!-- Tarjeta 1 -->
         <RelativeLayout
-            android:layout_width="81dp"
+            android:id="@+id/tarjeta10"
+            android:layout_width="0dp"
             android:layout_height="93dp"
             android:layout_marginEnd="10dp"
-            android:background="@drawable/rounded_card"
+            android:layout_weight="1"
+            android:background="@drawable/selector_tarjeta"
             android:backgroundTint="#3EDBFF"
-            android:padding="5dp">
+            android:padding="5dp"
+            android:clickable="true">
+
+            <!-- Contenido de la Tarjeta 1 -->
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/timeCardSimbol"
+                android:src="@drawable/timecardsimbol"
                 android:layout_centerHorizontal="true"
                 android:layout_above="@id/textoTarjeta1"
                 android:layout_marginTop="5dp"
@@ -110,17 +136,19 @@
 
         <!-- Tarjeta 2 -->
         <RelativeLayout
-            android:layout_width="81dp"
+            android:layout_width="0dp"
             android:layout_height="93dp"
             android:layout_marginEnd="10dp"
+            android:layout_weight="1"
             android:background="@drawable/rounded_card"
             android:backgroundTint="#B0F0A5"
             android:padding="5dp">
 
+            <!-- Contenido de la Tarjeta 2 -->
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/timeCardSimbol"
+                android:src="@drawable/timecardsimbol"
                 android:layout_centerHorizontal="true"
                 android:layout_above="@id/textoTarjeta2"
                 android:layout_marginTop="5dp"
@@ -136,21 +164,24 @@
                 android:textSize="19sp"
                 android:gravity="center"
                 />
+
         </RelativeLayout>
 
         <!-- Tarjeta 3 -->
         <RelativeLayout
-            android:layout_width="81dp"
+            android:layout_width="0dp"
             android:layout_height="93dp"
             android:layout_marginEnd="10dp"
+            android:layout_weight="1"
             android:background="@drawable/rounded_card"
             android:backgroundTint="#FFD09E"
             android:padding="5dp">
 
+            <!-- Contenido de la Tarjeta 3 -->
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/timeCardSimbol"
+                android:src="@drawable/timecardsimbol"
                 android:layout_centerHorizontal="true"
                 android:layout_above="@id/textoTarjeta3"
                 android:layout_marginTop="5dp"
@@ -170,12 +201,14 @@
 
         <!-- Tarjeta 4 -->
         <RelativeLayout
-            android:layout_width="81dp"
+            android:layout_width="0dp"
             android:layout_height="93dp"
+            android:layout_weight="1"
             android:background="@drawable/rounded_card"
             android:backgroundTint="#FB9F9E"
             android:padding="5dp">
 
+            <!-- Contenido de la Tarjeta 4 -->
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -183,7 +216,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="-74dp"
-                android:src="@drawable/timeCardSimbol" />
+                android:src="@drawable/timecardsimbol" />
 
             <TextView
                 android:id="@+id/textoTarjeta4"
@@ -196,50 +229,54 @@
                 android:textSize="19sp" />
         </RelativeLayout>
 
-
     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:background="#B9D5F3"
+        app:layout_constraintTop_toBottomOf="@id/layoutTarjetasRedondeadas"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
-    <RelativeLayout
+    <TextView
+        android:id="@+id/pregunta2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/layoutTarjetasRedondeadas"
-        android:layout_marginBottom="-169dp"
-        android:background="#B9D5F3"
-        android:paddingVertical="10dp">
-
-        <TextView
-            android:id="@+id/txtTipoComida"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:text="¿Que tipo de comida vas a hacer?"
-            android:textColor="#181818"
-            android:textStyle="bold"
-            android:textSize="18sp" />
-
-    </RelativeLayout>
-    <!-- Tarjetas comidas -->
+        android:text="¿Que tipo de comida vas a hacer?"
+        android:layout_marginTop="35dp"
+        android:textColor="#3F464D"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutTarjetasRedondeadas"
+        />
+    <!-- Tarjetas Comidas -->
 
     <LinearLayout
-        android:id="@+id/layoutTarjetasRedondeadas2"
+        android:id="@+id/layoutTarjetasComidas"
         android:layout_width="match_parent"
         android:layout_height="93dp"
-        android:layout_below="@id/layoutTarjetasRedondeadas"
-        android:layout_marginTop="66dp"
-        android:background="#B9D5F3"
-        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:orientation="horizontal"
-        android:layout_centerHorizontal="true">
+        app:layout_constraintTop_toBottomOf="@id/pregunta2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
-
-    <!-- Tarjeta 5 -->
+        <!-- Tarjeta 5 -->
         <RelativeLayout
-            android:layout_width="81dp"
+            android:layout_width="0dp"
             android:layout_height="93dp"
             android:layout_marginEnd="10dp"
             android:background="@drawable/rounded_card"
-            android:padding="5dp">
+            android:padding="5dp"
+            android:layout_weight="1">
 
+            <!-- Contenido de la Tarjeta desayunon -->
             <ImageView
                 android:layout_width="53dp"
                 android:layout_height="48dp"
@@ -248,7 +285,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"
 
-                android:src="@drawable/Desayuno" />
+                android:src="@drawable/desayuno" />
 
             <TextView
                 android:id="@+id/textoTarjetaDes"
@@ -264,12 +301,14 @@
 
         <!-- Tarjeta 6 -->
         <RelativeLayout
-            android:layout_width="81dp"
+            android:layout_width="0dp"
             android:layout_height="93dp"
             android:layout_marginEnd="10dp"
             android:background="@drawable/rounded_card"
-            android:padding="5dp">
+            android:padding="5dp"
+            android:layout_weight="1">
 
+            <!-- Contenido de la Tarjeta almuerzo -->
             <ImageView
                 android:layout_width="53dp"
                 android:layout_height="48dp"
@@ -278,7 +317,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"
 
-                android:src="@drawable/Almuerzo" />
+                android:src="@drawable/almuerzo" />
 
             <TextView
                 android:id="@+id/textoTarjetaAlm"
@@ -291,14 +330,17 @@
                 android:textSize="12dp"
                 android:textStyle="bold" />
         </RelativeLayout>
+
         <!-- Tarjeta 7 -->
         <RelativeLayout
-            android:layout_width="81dp"
+            android:layout_width="0dp"
             android:layout_height="93dp"
-            android:layout_marginEnd="10dp"
             android:background="@drawable/rounded_card"
-            android:padding="5dp">
+            android:padding="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1">
 
+            <!-- Contenido de la Tarjeta 7 -->
             <ImageView
                 android:layout_width="53dp"
                 android:layout_height="48dp"
@@ -307,7 +349,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"
 
-                android:src="@drawable/Cena" />
+                android:src="@drawable/cena" />
 
             <TextView
                 android:id="@+id/textoTarjetaCen"
@@ -320,14 +362,15 @@
                 android:textSize="12dp"
                 android:textStyle="bold" />
         </RelativeLayout>
-        <!-- Tarjeta 5 -->
-        <RelativeLayout
-            android:layout_width="81dp"
-            android:layout_height="93dp"
-            android:layout_marginEnd="10dp"
-            android:background="@drawable/rounded_card"
-            android:padding="5dp">
 
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="93dp"
+            android:background="@drawable/rounded_card"
+            android:padding="5dp"
+            android:layout_weight="1">
+
+            <!-- Contenido de la Tarjeta 8 -->
             <ImageView
                 android:layout_width="53dp"
                 android:layout_height="48dp"
@@ -336,7 +379,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"
 
-                android:src="@drawable/Postre" />
+                android:src="@drawable/postre" />
 
             <TextView
                 android:id="@+id/textoTarjetaPos"
@@ -348,11 +391,50 @@
                 android:textColor="#B9D5F3"
                 android:textSize="12dp"
                 android:textStyle="bold" />
+
         </RelativeLayout>
+        </LinearLayout>
 
 
-        <!-- Agrega aquí las tarjetas restantes de manera similar a las anteriores -->
+    <ImageButton
+        android:id="@+id/btnfiltro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/filtrar"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="5dp"
+        android:padding="10dp"
+        android:background="@drawable/superounded_button"
+        app:layout_constraintEnd_toStartOf="@+id/btnBuscar"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutTarjetasComidas"
+         />
 
-    </LinearLayout>
 
-</RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/superounded_button"
+        android:gravity="center"
+        android:text="Buscar recetas"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnfiltro"
+        app:layout_constraintTop_toBottomOf="@id/layoutTarjetasComidas"
+        android:paddingHorizontal="100dp" />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
