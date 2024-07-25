@@ -2430,6 +2430,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable almuerzo
 drawable avd_hide_password
 drawable avd_show_password
 drawable btn_checkbox_checked_mtrl
@@ -2441,12 +2442,15 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable button_rounded
+drawable cena
+drawable desayuno
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable edittext_rounded
+drawable filtrar
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -2499,8 +2503,15 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable postre
+drawable rounded_card
+drawable rounded_card_highlight
+drawable rounded_card_pressed
+drawable selector_tarjeta
+drawable superounded_button
 drawable test_custom_background
 drawable test_level_drawable
+drawable timecardsimbol
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
@@ -2603,6 +2614,8 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btnAgregar
+id btnBuscar
+id btnfiltro
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2739,6 +2752,10 @@ id jumpToEnd
 id jumpToStart
 id labeled
 id layout
+id layoutTarjetasComidas
+id layoutTarjetasIngredientes
+id layoutTarjetasRedondeadas
+id layoutTiempo
 id left
 id leftToRight
 id legacy
@@ -2841,6 +2858,8 @@ id percent
 id pin
 id position
 id postLayout
+id pregunta1
+id pregunta2
 id progress_circular
 id progress_horizontal
 id radio
@@ -2928,6 +2947,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id tarjeta10
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id test_radiobutton_android_button_tint
@@ -2950,6 +2970,14 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id textoTarjeta1
+id textoTarjeta2
+id textoTarjeta3
+id textoTarjeta4
+id textoTarjetaAlm
+id textoTarjetaCen
+id textoTarjetaDes
+id textoTarjetaPos
 id time
 id title
 id titleDividerNoCustom
@@ -3321,6 +3349,7 @@ style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style Animation_MaterialComponents_BottomSheetDialog
+style AppTheme
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
@@ -3428,7 +3457,6 @@ style Base_Theme_MaterialComponents_Light_Dialog_Bridge
 style Base_Theme_MaterialComponents_Light_Dialog_FixedSize
 style Base_Theme_MaterialComponents_Light_Dialog_MinWidth
 style Base_Theme_MaterialComponents_Light_DialogWhenLarge
-style Base_Theme_RecetasApp
 style Base_ThemeOverlay_AppCompat
 style Base_ThemeOverlay_AppCompat_ActionBar
 style Base_ThemeOverlay_AppCompat_Dark
@@ -3888,7 +3916,6 @@ style Theme_MaterialComponents_Light_NoActionBar
 style Theme_MaterialComponents_Light_NoActionBar_Bridge
 style Theme_MaterialComponents_NoActionBar
 style Theme_MaterialComponents_NoActionBar_Bridge
-style Theme_RecetasApp
 style ThemeOverlay_AppCompat
 style ThemeOverlay_AppCompat_ActionBar
 style ThemeOverlay_AppCompat_Dark

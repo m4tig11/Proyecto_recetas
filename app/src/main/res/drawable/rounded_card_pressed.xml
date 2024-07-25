@@ -1,0 +1,10 @@
+<!-- rounded_card_pressed.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- Fondo con color cuando está presionado -->
+    <solid android:background="#FFFFFF"/>
+    <!-- Bordes redondeados -->
+    <corners android:radius="10dp"/>
+    <size android:height="120dp"
+        android:width="120dp"/>
+</shape>
