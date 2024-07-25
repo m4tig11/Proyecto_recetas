@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="color10">#3EDBFF</color>
+    <color name="color25">#B0F0A5</color>
+    <color name="color45">#FFD09E</color>
+    <color name="color60">#FB9F9E</color>
+    <color name="colorTarjetaSeleccionada">#505191A0</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">RecetasApp</string>
 </resources>

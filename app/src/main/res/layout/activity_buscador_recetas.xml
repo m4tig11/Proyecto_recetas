@@ -6,7 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#3D53A0">
+    <View
+        android:id="@+id/emptyRectangle"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- TextView -->
     <TextView
         android:id="@+id/txtSeleccionaIngredientes"
         android:layout_width="wrap_content"
@@ -16,7 +25,7 @@
         android:textColor="#FFFFFF"
         android:textSize="14sp"
         tools:ignore="MissingConstraints"
-        android:layout_gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/emptyRectangle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -106,6 +115,7 @@
             android:layout_height="93dp"
             android:layout_marginEnd="10dp"
             android:layout_weight="1"
+            android:elevation="20dp"
             android:background="@drawable/selector_tarjeta"
             android:backgroundTint="#3EDBFF"
             android:padding="5dp"
@@ -136,13 +146,15 @@
 
         <!-- Tarjeta 2 -->
         <RelativeLayout
+            android:id="@+id/tarjeta25"
             android:layout_width="0dp"
             android:layout_height="93dp"
             android:layout_marginEnd="10dp"
             android:layout_weight="1"
             android:background="@drawable/rounded_card"
             android:backgroundTint="#B0F0A5"
-            android:padding="5dp">
+            android:padding="5dp"
+            android:clickable="true">
 
             <!-- Contenido de la Tarjeta 2 -->
             <ImageView
@@ -169,13 +181,15 @@
 
         <!-- Tarjeta 3 -->
         <RelativeLayout
+            android:id="@+id/tarjeta45"
             android:layout_width="0dp"
             android:layout_height="93dp"
             android:layout_marginEnd="10dp"
             android:layout_weight="1"
             android:background="@drawable/rounded_card"
             android:backgroundTint="#FFD09E"
-            android:padding="5dp">
+            android:padding="5dp"
+            android:clickable="true">
 
             <!-- Contenido de la Tarjeta 3 -->
             <ImageView
@@ -201,11 +215,13 @@
 
         <!-- Tarjeta 4 -->
         <RelativeLayout
+            android:id="@+id/tarjeta60"
             android:layout_width="0dp"
             android:layout_height="93dp"
             android:layout_weight="1"
             android:background="@drawable/rounded_card"
             android:backgroundTint="#FB9F9E"
+            android:clickable="true"
             android:padding="5dp">
 
             <!-- Contenido de la Tarjeta 4 -->
@@ -224,9 +240,9 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="60\nmin"
-                android:textStyle="bold"
                 android:textColor="#FFFFFF"
-                android:textSize="19sp" />
+                android:textSize="19sp"
+                android:textStyle="bold" />
         </RelativeLayout>
 
     </LinearLayout>
@@ -269,6 +285,7 @@
 
         <!-- Tarjeta 5 -->
         <RelativeLayout
+            android:id="@+id/tarjetaDes"
             android:layout_width="0dp"
             android:layout_height="93dp"
             android:layout_marginEnd="10dp"
@@ -301,6 +318,7 @@
 
         <!-- Tarjeta 6 -->
         <RelativeLayout
+            android:id="@+id/tarjetaAlm"
             android:layout_width="0dp"
             android:layout_height="93dp"
             android:layout_marginEnd="10dp"
@@ -333,6 +351,7 @@
 
         <!-- Tarjeta 7 -->
         <RelativeLayout
+            android:id="@+id/tarjetaCen"
             android:layout_width="0dp"
             android:layout_height="93dp"
             android:background="@drawable/rounded_card"
@@ -364,6 +383,7 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/tarjetaPos"
             android:layout_width="0dp"
             android:layout_height="93dp"
             android:background="@drawable/rounded_card"

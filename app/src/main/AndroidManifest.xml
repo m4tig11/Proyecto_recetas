@@ -24,7 +24,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".DetallesRecetaActivity"/>
-        <activity android:name="BuscadorPorIngredientesActivity"/>
+        <activity android:name=".BuscadorPorIngredientesActivity"/>
+        <activity android:name=".ResultadosActivity"/>
     </application>
 
 </manifest>

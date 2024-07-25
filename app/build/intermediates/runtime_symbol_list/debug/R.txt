@@ -1224,6 +1224,11 @@ int color cardview_light_background 0x7f05002b
 int color cardview_shadow_end_color 0x7f05002c
 int color cardview_shadow_start_color 0x7f05002d
 int color checkbox_themeable_attribute_color 0x7f05002e
+int color color10 0x7f05024f
+int color color25 0x7f050250
+int color color45 0x7f050251
+int color color60 0x7f050252
+int color colorTarjetaSeleccionada 0x7f05024e
 int color design_bottom_navigation_shadow_color 0x7f05002f
 int color design_box_stroke_color 0x7f050030
 int color design_dark_default_color_background 0x7f050031
@@ -2697,6 +2702,7 @@ int id east 0x7f0800b2
 int id editIngredientes 0x7f0800b3
 int id edit_query 0x7f0800b4
 int id elastic 0x7f0800b5
+int id emptyRectangle 0x7f0801ff
 int id end 0x7f0800b6
 int id endToStart 0x7f0800b7
 int id enterAlways 0x7f0800b8
@@ -2947,6 +2953,13 @@ int id tag_unhandled_key_event_manager 0x7f0801aa
 int id tag_unhandled_key_listeners 0x7f0801ab
 int id tag_window_insets_animation_callback 0x7f0801ac
 int id tarjeta10 0x7f0801f7
+int id tarjeta25 0x7f0801f8
+int id tarjeta45 0x7f0801f9
+int id tarjeta60 0x7f0801fa
+int id tarjetaAlm 0x7f0801fb
+int id tarjetaCen 0x7f0801fc
+int id tarjetaDes 0x7f0801fd
+int id tarjetaPos 0x7f0801fe
 int id test_checkbox_android_button_tint 0x7f0801ad
 int id test_checkbox_app_button_tint 0x7f0801ae
 int id test_radiobutton_android_button_tint 0x7f0801af
