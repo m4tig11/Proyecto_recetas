@@ -22,6 +22,11 @@ class BuscadorPorIngredientesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_buscador_recetas)
+
+        findViewById<RelativeLayout>(R.id.btnBuscar).setOnClickListener {
+
+        }
+
         var isCardPressed = false
         findViewById<RelativeLayout>(R.id.tarjeta10).setOnClickListener {
             isCardPressed = !isCardPressed // Alternar el estado

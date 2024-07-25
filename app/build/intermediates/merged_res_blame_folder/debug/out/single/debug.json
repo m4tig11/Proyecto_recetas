@@ -1,138 +1,134 @@
 [
     {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.recetasapp-merged_res-44:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.recetasapp-main-46:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\drawable_edittext_rounded.xml.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\drawable\\edittext_rounded.xml"
+        "merged": "com.example.recetasapp-merged_res-44:/drawable_button_rounded.xml.flat",
+        "source": "com.example.recetasapp-main-46:/drawable/button_rounded.xml"
     },
     {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.recetasapp-merged_res-44:/drawable_postre.png.flat",
+        "source": "com.example.recetasapp-main-46:/drawable/postre.png"
     },
     {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\drawable_almuerzo.png.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\drawable\\almuerzo.png"
+        "merged": "com.example.recetasapp-merged_res-44:/drawable_edittext_rounded.xml.flat",
+        "source": "com.example.recetasapp-main-46:/drawable/edittext_rounded.xml"
     },
     {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.recetasapp-merged_res-44:/drawable_cena.png.flat",
+        "source": "com.example.recetasapp-main-46:/drawable/cena.png"
     },
     {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\layout_activity_resultados.xml.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\layout\\activity_resultados.xml"
+        "merged": "com.example.recetasapp-merged_res-44:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.recetasapp-main-46:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "com.example.recetasapp-merged_res-44:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.recetasapp-main-46:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\drawable_selector_tarjeta.xml.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\drawable\\selector_tarjeta.xml"
+        "merged": "com.example.recetasapp-merged_res-44:/drawable_filtrar.png.flat",
+        "source": "com.example.recetasapp-main-46:/drawable/filtrar.png"
     },
     {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\drawable_rounded_card_highlight.xml.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\drawable\\rounded_card_highlight.xml"
+        "merged": "com.example.recetasapp-merged_res-44:/drawable_almuerzo.png.flat",
+        "source": "com.example.recetasapp-main-46:/drawable/almuerzo.png"
+    },
+    {
+        "merged": "com.example.recetasapp-merged_res-44:/drawable_selector_tarjeta.xml.flat",
+        "source": "com.example.recetasapp-main-46:/drawable/selector_tarjeta.xml"
+    },
+    {
+        "merged": "com.example.recetasapp-merged_res-44:/drawable_superounded_button.xml.flat",
+        "source": "com.example.recetasapp-main-46:/drawable/superounded_button.xml"
+    },
+    {
+        "merged": "com.example.recetasapp-merged_res-44:/drawable_rounded_card.xml.flat",
+        "source": "com.example.recetasapp-main-46:/drawable/rounded_card.xml"
     },
     {
         "merged": "com.example.recetasapp-merged_res-44:/drawable_rounded_card_pressed.xml.flat",
         "source": "com.example.recetasapp-main-46:/drawable/rounded_card_pressed.xml"
     },
     {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\drawable_filtrar.png.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\drawable\\filtrar.png"
+        "merged": "com.example.recetasapp-merged_res-44:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.recetasapp-main-46:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\drawable_rounded_card_pressed.xml.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\drawable\\rounded_card_pressed.xml"
+        "merged": "com.example.recetasapp-merged_res-44:/drawable_rounded_card_highlight.xml.flat",
+        "source": "com.example.recetasapp-main-46:/drawable/rounded_card_highlight.xml"
     },
     {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "com.example.recetasapp-merged_res-44:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.recetasapp-main-46:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\drawable_cena.png.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\drawable\\cena.png"
+        "merged": "com.example.recetasapp-merged_res-44:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.recetasapp-main-46:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "com.example.recetasapp-merged_res-44:/xml_backup_rules.xml.flat",
+        "source": "com.example.recetasapp-main-46:/xml/backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\xml\\backup_rules.xml"
+        "merged": "com.example.recetasapp-merged_res-44:/drawable_desayuno.png.flat",
+        "source": "com.example.recetasapp-main-46:/drawable/desayuno.png"
     },
     {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\drawable_desayuno.png.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\drawable\\desayuno.png"
+        "merged": "com.example.recetasapp-merged_res-44:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.recetasapp-main-46:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "com.example.recetasapp-merged_res-44:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.recetasapp-main-46:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\drawable_postre.png.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\drawable\\postre.png"
+        "merged": "com.example.recetasapp-merged_res-44:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.recetasapp-main-46:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\drawable_rounded_card.xml.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\drawable\\rounded_card.xml"
+        "merged": "com.example.recetasapp-merged_res-44:/layout_activity_detalles_receta.xml.flat",
+        "source": "com.example.recetasapp-main-46:/layout/activity_detalles_receta.xml"
     },
     {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "com.example.recetasapp-merged_res-44:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.recetasapp-main-46:/drawable-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "com.example.recetasapp-merged_res-44:/layout_activity_buscador_recetas.xml.flat",
+        "source": "com.example.recetasapp-main-46:/layout/activity_buscador_recetas.xml"
     },
     {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\xml\\data_extraction_rules.xml"
+        "merged": "com.example.recetasapp-merged_res-44:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.recetasapp-main-46:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "com.example.recetasapp-merged_res-44:/drawable_timecardsimbol.png.flat",
+        "source": "com.example.recetasapp-main-46:/drawable/timecardsimbol.png"
     },
     {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "com.example.recetasapp-merged_res-44:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.recetasapp-main-46:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\drawable_button_rounded.xml.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\drawable\\button_rounded.xml"
+        "merged": "com.example.recetasapp-merged_res-44:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.recetasapp-main-46:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "com.example.recetasapp-merged_res-44:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.recetasapp-main-46:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\layout_activity_buscador_recetas.xml.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\layout\\activity_buscador_recetas.xml"
+        "merged": "com.example.recetasapp-merged_res-44:/layout_activity_resultados.xml.flat",
+        "source": "com.example.recetasapp-main-46:/layout/activity_resultados.xml"
     },
     {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\drawable_timecardsimbol.png.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\drawable\\timecardsimbol.png"
+        "merged": "com.example.recetasapp-merged_res-44:/layout_activity_main.xml.flat",
+        "source": "com.example.recetasapp-main-46:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\mipmap-hdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\drawable_superounded_button.xml.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\drawable\\superounded_button.xml"
-    },
-    {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\drawable\\ic_launcher_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-merged_res-44:\\layout_activity_detalles_receta.xml.flat",
-        "source": "C:\\Users\\paola\\.gradle\\daemon\\8.0\\com.example.recetasapp-main-46:\\layout\\activity_detalles_receta.xml"
+        "merged": "com.example.recetasapp-merged_res-44:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.recetasapp-main-46:/mipmap-xxxhdpi/ic_launcher.webp"
     }
 ]
