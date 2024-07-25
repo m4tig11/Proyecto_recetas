@@ -1,6 +1,11 @@
 R_DEF: Internal format may change without notice
 local
 color black
+color color10
+color color25
+color color45
+color color60
+color colorTarjetaSeleccionada
 color white
 drawable almuerzo
 drawable button_rounded
@@ -25,6 +30,7 @@ id cardViewIngredientes
 id cardViewInstrucciones
 id contenedorTarjetas
 id editIngredientes
+id emptyRectangle
 id imageViewReceta
 id layoutTarjetasComidas
 id layoutTarjetasIngredientes
@@ -33,6 +39,13 @@ id layoutTiempo
 id pregunta1
 id pregunta2
 id tarjeta10
+id tarjeta25
+id tarjeta45
+id tarjeta60
+id tarjetaAlm
+id tarjetaCen
+id tarjetaDes
+id tarjetaPos
 id textViewInstrucciones
 id textViewTituloReceta
 id textoTarjeta1
