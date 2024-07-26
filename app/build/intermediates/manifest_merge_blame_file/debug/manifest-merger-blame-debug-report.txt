@@ -6,119 +6,122 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="24"
-8-->C:\Users\paola\AndroidStudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml
+8-->C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="33" />
-9-->C:\Users\paola\AndroidStudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml
+9-->C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\paola\AndroidStudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:4:5-67
-11-->C:\Users\paola\AndroidStudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:4:22-64
+11-->C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:4:5-67
+11-->C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:4:22-64
 12
 13    <application
-13-->C:\Users\paola\AndroidStudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:6:5-29:19
+13-->C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:6:5-30:19
 14        android:allowBackup="true"
-14-->C:\Users\paola\AndroidStudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:7:9-35
+14-->C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:7:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-15-->[androidx.core:core:1.8.0] C:\Users\paola\.gradle\caches\transforms-3\d9d1afb6ad095e0764ca0e46a5f90d88\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+15-->[androidx.core:core:1.8.0] C:\Users\matia\.gradle\caches\transforms-3\d9d1afb6ad095e0764ca0e46a5f90d88\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 16        android:dataExtractionRules="@xml/data_extraction_rules"
-16-->C:\Users\paola\AndroidStudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:8:9-65
+16-->C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:8:9-65
 17        android:debuggable="true"
 18        android:extractNativeLibs="false"
 19        android:fullBackupContent="@xml/backup_rules"
-19-->C:\Users\paola\AndroidStudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:9:9-54
+19-->C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:9:9-54
 20        android:icon="@mipmap/ic_launcher"
-20-->C:\Users\paola\AndroidStudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:10:9-43
+20-->C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:10:9-43
 21        android:label="@string/app_name"
-21-->C:\Users\paola\AndroidStudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:11:9-41
+21-->C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:11:9-41
 22        android:roundIcon="@mipmap/ic_launcher_round"
-22-->C:\Users\paola\AndroidStudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:12:9-54
+22-->C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:12:9-54
 23        android:supportsRtl="true"
-23-->C:\Users\paola\AndroidStudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:13:9-35
+23-->C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:13:9-35
 24        android:testOnly="true"
 25        android:theme="@style/AppTheme" >
-25-->C:\Users\paola\AndroidStudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:14:9-40
+25-->C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:14:9-40
 26        <activity
-26-->C:\Users\paola\AndroidStudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:17:9-25:20
+26-->C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:17:9-25:20
 27            android:name="com.example.recetasapp.MainActivity"
-27-->C:\Users\paola\AndroidStudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:18:13-41
+27-->C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:18:13-41
 28            android:exported="true" >
-28-->C:\Users\paola\AndroidStudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:19:13-36
+28-->C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:19:13-36
 29            <intent-filter>
-29-->C:\Users\paola\AndroidStudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:20:13-24:29
+29-->C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:20:13-24:29
 30                <action android:name="android.intent.action.MAIN" />
-30-->C:\Users\paola\AndroidStudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:21:17-69
-30-->C:\Users\paola\AndroidStudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:21:25-66
+30-->C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:21:17-69
+30-->C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:21:25-66
 31
 32                <category android:name="android.intent.category.LAUNCHER" />
-32-->C:\Users\paola\AndroidStudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:23:17-77
-32-->C:\Users\paola\AndroidStudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:23:27-74
+32-->C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:23:17-77
+32-->C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:23:27-74
 33            </intent-filter>
 34        </activity>
 35        <activity android:name="com.example.recetasapp.DetallesRecetaActivity" />
-35-->C:\Users\paola\AndroidStudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:26:9-59
-35-->C:\Users\paola\AndroidStudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:26:19-57
+35-->C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:26:9-59
+35-->C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:26:19-57
 36        <activity android:name="com.example.recetasapp.BuscadorPorIngredientesActivity" />
-36-->C:\Users\paola\AndroidStudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:27:9-68
-36-->C:\Users\paola\AndroidStudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:27:19-66
+36-->C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:27:9-68
+36-->C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:27:19-66
 37        <activity android:name="com.example.recetasapp.ResultadosActivity" />
-37-->C:\Users\paola\AndroidStudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:28:9-55
-37-->C:\Users\paola\AndroidStudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:28:19-53
-38
-39        <provider
-39-->[com.squareup.picasso:picasso:2.71828] C:\Users\paola\.gradle\caches\transforms-3\fdada7a0993ad9e9faac779fc2cc2b5f\transformed\picasso-2.71828\AndroidManifest.xml:8:9-11:40
-40            android:name="com.squareup.picasso.PicassoProvider"
-40-->[com.squareup.picasso:picasso:2.71828] C:\Users\paola\.gradle\caches\transforms-3\fdada7a0993ad9e9faac779fc2cc2b5f\transformed\picasso-2.71828\AndroidManifest.xml:9:13-64
-41            android:authorities="com.example.recetasapp.com.squareup.picasso"
-41-->[com.squareup.picasso:picasso:2.71828] C:\Users\paola\.gradle\caches\transforms-3\fdada7a0993ad9e9faac779fc2cc2b5f\transformed\picasso-2.71828\AndroidManifest.xml:10:13-72
-42            android:exported="false" />
-42-->[com.squareup.picasso:picasso:2.71828] C:\Users\paola\.gradle\caches\transforms-3\fdada7a0993ad9e9faac779fc2cc2b5f\transformed\picasso-2.71828\AndroidManifest.xml:11:13-37
-43        <provider
-43-->[androidx.emoji2:emoji2:1.0.0] C:\Users\paola\.gradle\caches\transforms-3\408e8f145fabf7c32714f26c57f83168\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-44            android:name="androidx.startup.InitializationProvider"
-44-->[androidx.emoji2:emoji2:1.0.0] C:\Users\paola\.gradle\caches\transforms-3\408e8f145fabf7c32714f26c57f83168\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
-45            android:authorities="com.example.recetasapp.androidx-startup"
-45-->[androidx.emoji2:emoji2:1.0.0] C:\Users\paola\.gradle\caches\transforms-3\408e8f145fabf7c32714f26c57f83168\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
-46            android:exported="false" >
-46-->[androidx.emoji2:emoji2:1.0.0] C:\Users\paola\.gradle\caches\transforms-3\408e8f145fabf7c32714f26c57f83168\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
-47            <meta-data
-47-->[androidx.emoji2:emoji2:1.0.0] C:\Users\paola\.gradle\caches\transforms-3\408e8f145fabf7c32714f26c57f83168\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-48                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-48-->[androidx.emoji2:emoji2:1.0.0] C:\Users\paola\.gradle\caches\transforms-3\408e8f145fabf7c32714f26c57f83168\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
-49                android:value="androidx.startup" />
-49-->[androidx.emoji2:emoji2:1.0.0] C:\Users\paola\.gradle\caches\transforms-3\408e8f145fabf7c32714f26c57f83168\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
-50            <meta-data
-50-->[androidx.profileinstaller:profileinstaller:1.0.0] C:\Users\paola\.gradle\caches\transforms-3\91db0e6840721ac45e601f6d970a281c\transformed\profileinstaller-1.0.0\AndroidManifest.xml:31:13-33:52
-51                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-51-->[androidx.profileinstaller:profileinstaller:1.0.0] C:\Users\paola\.gradle\caches\transforms-3\91db0e6840721ac45e601f6d970a281c\transformed\profileinstaller-1.0.0\AndroidManifest.xml:32:17-85
-52                android:value="androidx.startup" />
-52-->[androidx.profileinstaller:profileinstaller:1.0.0] C:\Users\paola\.gradle\caches\transforms-3\91db0e6840721ac45e601f6d970a281c\transformed\profileinstaller-1.0.0\AndroidManifest.xml:33:17-49
-53            <meta-data
-53-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\paola\.gradle\caches\transforms-3\8c23b2f43d6c58870fdbeb1d7572180c\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-54                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-54-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\paola\.gradle\caches\transforms-3\8c23b2f43d6c58870fdbeb1d7572180c\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-55                android:value="androidx.startup" />
-55-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\paola\.gradle\caches\transforms-3\8c23b2f43d6c58870fdbeb1d7572180c\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-56        </provider>
-57
-58        <receiver
-58-->[androidx.profileinstaller:profileinstaller:1.0.0] C:\Users\paola\.gradle\caches\transforms-3\91db0e6840721ac45e601f6d970a281c\transformed\profileinstaller-1.0.0\AndroidManifest.xml:36:9-45:20
-59            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-59-->[androidx.profileinstaller:profileinstaller:1.0.0] C:\Users\paola\.gradle\caches\transforms-3\91db0e6840721ac45e601f6d970a281c\transformed\profileinstaller-1.0.0\AndroidManifest.xml:37:13-76
-60            android:directBootAware="false"
-60-->[androidx.profileinstaller:profileinstaller:1.0.0] C:\Users\paola\.gradle\caches\transforms-3\91db0e6840721ac45e601f6d970a281c\transformed\profileinstaller-1.0.0\AndroidManifest.xml:38:13-44
-61            android:enabled="true"
-61-->[androidx.profileinstaller:profileinstaller:1.0.0] C:\Users\paola\.gradle\caches\transforms-3\91db0e6840721ac45e601f6d970a281c\transformed\profileinstaller-1.0.0\AndroidManifest.xml:39:13-35
-62            android:exported="true"
-62-->[androidx.profileinstaller:profileinstaller:1.0.0] C:\Users\paola\.gradle\caches\transforms-3\91db0e6840721ac45e601f6d970a281c\transformed\profileinstaller-1.0.0\AndroidManifest.xml:40:13-36
-63            android:permission="android.permission.DUMP" >
-63-->[androidx.profileinstaller:profileinstaller:1.0.0] C:\Users\paola\.gradle\caches\transforms-3\91db0e6840721ac45e601f6d970a281c\transformed\profileinstaller-1.0.0\AndroidManifest.xml:41:13-57
-64            <intent-filter>
-64-->[androidx.profileinstaller:profileinstaller:1.0.0] C:\Users\paola\.gradle\caches\transforms-3\91db0e6840721ac45e601f6d970a281c\transformed\profileinstaller-1.0.0\AndroidManifest.xml:42:13-44:29
-65                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-65-->[androidx.profileinstaller:profileinstaller:1.0.0] C:\Users\paola\.gradle\caches\transforms-3\91db0e6840721ac45e601f6d970a281c\transformed\profileinstaller-1.0.0\AndroidManifest.xml:43:17-91
-65-->[androidx.profileinstaller:profileinstaller:1.0.0] C:\Users\paola\.gradle\caches\transforms-3\91db0e6840721ac45e601f6d970a281c\transformed\profileinstaller-1.0.0\AndroidManifest.xml:43:25-88
-66            </intent-filter>
-67        </receiver>
-68    </application>
-69
-70</manifest>
+37-->C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:28:9-55
+37-->C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:28:19-53
+38        <activity android:name="com.example.recetasapp.ProfileActivity" />
+38-->C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:29:9-52
+38-->C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:29:19-50
+39
+40        <provider
+40-->[com.squareup.picasso:picasso:2.71828] C:\Users\matia\.gradle\caches\transforms-3\fdada7a0993ad9e9faac779fc2cc2b5f\transformed\picasso-2.71828\AndroidManifest.xml:8:9-11:40
+41            android:name="com.squareup.picasso.PicassoProvider"
+41-->[com.squareup.picasso:picasso:2.71828] C:\Users\matia\.gradle\caches\transforms-3\fdada7a0993ad9e9faac779fc2cc2b5f\transformed\picasso-2.71828\AndroidManifest.xml:9:13-64
+42            android:authorities="com.example.recetasapp.com.squareup.picasso"
+42-->[com.squareup.picasso:picasso:2.71828] C:\Users\matia\.gradle\caches\transforms-3\fdada7a0993ad9e9faac779fc2cc2b5f\transformed\picasso-2.71828\AndroidManifest.xml:10:13-72
+43            android:exported="false" />
+43-->[com.squareup.picasso:picasso:2.71828] C:\Users\matia\.gradle\caches\transforms-3\fdada7a0993ad9e9faac779fc2cc2b5f\transformed\picasso-2.71828\AndroidManifest.xml:11:13-37
+44        <provider
+44-->[androidx.emoji2:emoji2:1.0.0] C:\Users\matia\.gradle\caches\transforms-3\408e8f145fabf7c32714f26c57f83168\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+45            android:name="androidx.startup.InitializationProvider"
+45-->[androidx.emoji2:emoji2:1.0.0] C:\Users\matia\.gradle\caches\transforms-3\408e8f145fabf7c32714f26c57f83168\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+46            android:authorities="com.example.recetasapp.androidx-startup"
+46-->[androidx.emoji2:emoji2:1.0.0] C:\Users\matia\.gradle\caches\transforms-3\408e8f145fabf7c32714f26c57f83168\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+47            android:exported="false" >
+47-->[androidx.emoji2:emoji2:1.0.0] C:\Users\matia\.gradle\caches\transforms-3\408e8f145fabf7c32714f26c57f83168\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+48            <meta-data
+48-->[androidx.emoji2:emoji2:1.0.0] C:\Users\matia\.gradle\caches\transforms-3\408e8f145fabf7c32714f26c57f83168\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+49                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+49-->[androidx.emoji2:emoji2:1.0.0] C:\Users\matia\.gradle\caches\transforms-3\408e8f145fabf7c32714f26c57f83168\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+50                android:value="androidx.startup" />
+50-->[androidx.emoji2:emoji2:1.0.0] C:\Users\matia\.gradle\caches\transforms-3\408e8f145fabf7c32714f26c57f83168\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+51            <meta-data
+51-->[androidx.profileinstaller:profileinstaller:1.0.0] C:\Users\matia\.gradle\caches\transforms-3\91db0e6840721ac45e601f6d970a281c\transformed\profileinstaller-1.0.0\AndroidManifest.xml:31:13-33:52
+52                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+52-->[androidx.profileinstaller:profileinstaller:1.0.0] C:\Users\matia\.gradle\caches\transforms-3\91db0e6840721ac45e601f6d970a281c\transformed\profileinstaller-1.0.0\AndroidManifest.xml:32:17-85
+53                android:value="androidx.startup" />
+53-->[androidx.profileinstaller:profileinstaller:1.0.0] C:\Users\matia\.gradle\caches\transforms-3\91db0e6840721ac45e601f6d970a281c\transformed\profileinstaller-1.0.0\AndroidManifest.xml:33:17-49
+54            <meta-data
+54-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\matia\.gradle\caches\transforms-3\8c23b2f43d6c58870fdbeb1d7572180c\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+55                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+55-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\matia\.gradle\caches\transforms-3\8c23b2f43d6c58870fdbeb1d7572180c\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+56                android:value="androidx.startup" />
+56-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\matia\.gradle\caches\transforms-3\8c23b2f43d6c58870fdbeb1d7572180c\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+57        </provider>
+58
+59        <receiver
+59-->[androidx.profileinstaller:profileinstaller:1.0.0] C:\Users\matia\.gradle\caches\transforms-3\91db0e6840721ac45e601f6d970a281c\transformed\profileinstaller-1.0.0\AndroidManifest.xml:36:9-45:20
+60            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+60-->[androidx.profileinstaller:profileinstaller:1.0.0] C:\Users\matia\.gradle\caches\transforms-3\91db0e6840721ac45e601f6d970a281c\transformed\profileinstaller-1.0.0\AndroidManifest.xml:37:13-76
+61            android:directBootAware="false"
+61-->[androidx.profileinstaller:profileinstaller:1.0.0] C:\Users\matia\.gradle\caches\transforms-3\91db0e6840721ac45e601f6d970a281c\transformed\profileinstaller-1.0.0\AndroidManifest.xml:38:13-44
+62            android:enabled="true"
+62-->[androidx.profileinstaller:profileinstaller:1.0.0] C:\Users\matia\.gradle\caches\transforms-3\91db0e6840721ac45e601f6d970a281c\transformed\profileinstaller-1.0.0\AndroidManifest.xml:39:13-35
+63            android:exported="true"
+63-->[androidx.profileinstaller:profileinstaller:1.0.0] C:\Users\matia\.gradle\caches\transforms-3\91db0e6840721ac45e601f6d970a281c\transformed\profileinstaller-1.0.0\AndroidManifest.xml:40:13-36
+64            android:permission="android.permission.DUMP" >
+64-->[androidx.profileinstaller:profileinstaller:1.0.0] C:\Users\matia\.gradle\caches\transforms-3\91db0e6840721ac45e601f6d970a281c\transformed\profileinstaller-1.0.0\AndroidManifest.xml:41:13-57
+65            <intent-filter>
+65-->[androidx.profileinstaller:profileinstaller:1.0.0] C:\Users\matia\.gradle\caches\transforms-3\91db0e6840721ac45e601f6d970a281c\transformed\profileinstaller-1.0.0\AndroidManifest.xml:42:13-44:29
+66                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+66-->[androidx.profileinstaller:profileinstaller:1.0.0] C:\Users\matia\.gradle\caches\transforms-3\91db0e6840721ac45e601f6d970a281c\transformed\profileinstaller-1.0.0\AndroidManifest.xml:43:17-91
+66-->[androidx.profileinstaller:profileinstaller:1.0.0] C:\Users\matia\.gradle\caches\transforms-3\91db0e6840721ac45e601f6d970a281c\transformed\profileinstaller-1.0.0\AndroidManifest.xml:43:25-88
+67            </intent-filter>
+68        </receiver>
+69    </application>
+70
+71</manifest>

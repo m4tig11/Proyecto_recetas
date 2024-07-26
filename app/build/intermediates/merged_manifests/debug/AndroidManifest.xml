@@ -35,6 +35,7 @@
         <activity android:name="com.example.recetasapp.DetallesRecetaActivity" />
         <activity android:name="com.example.recetasapp.BuscadorPorIngredientesActivity" />
         <activity android:name="com.example.recetasapp.ResultadosActivity" />
+        <activity android:name="com.example.recetasapp.ProfileActivity" />
 
         <provider
             android:name="com.squareup.picasso.PicassoProvider"

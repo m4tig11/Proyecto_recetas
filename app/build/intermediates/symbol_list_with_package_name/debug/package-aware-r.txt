@@ -2448,6 +2448,7 @@ drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable button_rounded
 drawable cena
+drawable circle_shape
 drawable desayuno
 drawable design_fab_background
 drawable design_ic_visibility
@@ -2456,6 +2457,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable edittext_rounded
 drawable filtrar
+drawable gluten
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -2467,6 +2469,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable lactosa
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
 drawable m3_radiobutton_ripple
@@ -2475,6 +2478,7 @@ drawable m3_tabs_background
 drawable m3_tabs_line_indicator
 drawable m3_tabs_rounded_line_indicator
 drawable m3_tabs_transparent_background
+drawable mariscos
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -2509,6 +2513,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable postre
+drawable profile
 drawable rounded_card
 drawable rounded_card_highlight
 drawable rounded_card_pressed
@@ -2625,7 +2630,14 @@ id buttonPanel
 id cache_measures
 id callMeasure
 id cancel_button
+id cardKeto
+id cardPaleo
+id cardVegan
+id cardVegetariana
 id cardView
+id cardView1
+id cardView2
+id cardView3
 id cardViewIngredientes
 id cardViewInstrucciones
 id carryVelocity
@@ -2745,6 +2757,9 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id image1
+id image2
+id image3
 id imageViewReceta
 id immediateStop
 id included
@@ -2866,6 +2881,7 @@ id position
 id postLayout
 id pregunta1
 id pregunta2
+id profile
 id progress_circular
 id progress_horizontal
 id radio
@@ -2968,10 +2984,14 @@ id test_radiobutton_app_button_tint
 id text
 id text2
 id textEnd
+id textKeto
+id textPaleo
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textVegan
+id textVegetariana
 id textViewInstrucciones
 id textViewTituloReceta
 id text_input_end_icon
@@ -2996,6 +3016,9 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toggleButton1
+id toggleButton2
+id toggleButton3
 id top
 id topPanel
 id touch_outside
@@ -3119,6 +3142,7 @@ layout abc_tooltip
 layout activity_buscador_recetas
 layout activity_detalles_receta
 layout activity_main
+layout activity_profile
 layout activity_resultados
 layout custom_dialog
 layout design_bottom_navigation_item

@@ -1,6 +1,8 @@
 package com.example.recetasapp
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.graphics.Color
 import android.os.Bundle
 import android.util.TypedValue
@@ -13,14 +15,19 @@ import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import android.util.Log
+import android.widget.ImageView
 import androidx.core.content.ContextCompat
 
 class BuscadorPorIngredientesActivity : AppCompatActivity() {
 
+    private lateinit var sharedPreferences: SharedPreferences
     private val listaIngredientes = mutableListOf<String>()
     private lateinit var layoutTarjetasIngredientes: LinearLayout
     private var maxReadyTime: String = "300"
     private var type: String = ""
+
+
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,9 +35,16 @@ class BuscadorPorIngredientesActivity : AppCompatActivity() {
         setContentView(R.layout.activity_buscador_recetas)
         supportActionBar?.setDisplayShowTitleEnabled(false)
 
+        sharedPreferences = getSharedPreferences("prefs", Context.MODE_PRIVATE)
+        var lactosa: Boolean = sharedPreferences.getBoolean("lactosa", false)
+        var gluten: Boolean = sharedPreferences.getBoolean("gluten", false)
+        var mariscos: Boolean = sharedPreferences.getBoolean("mariscos", false)
+        var dieta: String? = sharedPreferences.getString("selectedCard", null)
 
         val btnAgregar = findViewById<Button>(R.id.btnAgregar)
         val btnBuscar = findViewById<Button>(R.id.btnBuscar)
+        val profileCircle: ImageView = findViewById(R.id.profile)
+
 
         val editIngredientes = findViewById<EditText>(R.id.editIngredientes)
         layoutTarjetasIngredientes = findViewById(R.id.layoutTarjetasIngredientes)
@@ -39,6 +53,14 @@ class BuscadorPorIngredientesActivity : AppCompatActivity() {
         val tarjeta25 = findViewById<RelativeLayout>(R.id.tarjeta25)
         val tarjeta45 = findViewById<RelativeLayout>(R.id.tarjeta45)
         val tarjeta60 = findViewById<RelativeLayout>(R.id.tarjeta60)
+
+
+
+        profileCircle.setOnClickListener {
+            val intent = Intent(this@BuscadorPorIngredientesActivity, ProfileActivity::class.java)
+
+            startActivity(intent)
+        }
 
         tarjeta10.setOnClickListener {
             maxReadyTime = "10"
@@ -135,12 +157,15 @@ class BuscadorPorIngredientesActivity : AppCompatActivity() {
 
         btnBuscar.setOnClickListener {
 
-            println(maxReadyTime)
-
+            Log.d("LACTOSA", lactosa.toString())
             val intent = Intent(this@BuscadorPorIngredientesActivity, ResultadosActivity::class.java)
             intent.putExtra("Lista_ingredientes",listaIngredientes.toTypedArray())
             intent.putExtra("MaxReadyTime",maxReadyTime)
             intent.putExtra("TypeDish",type.toString())
+            intent.putExtra("lactosa",lactosa.toString())
+            intent.putExtra("gluten",gluten.toString())
+            intent.putExtra("mariscos",mariscos.toString())
+            intent.putExtra("dieta",dieta)
             startActivity(intent)
         }
 

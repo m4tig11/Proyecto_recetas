@@ -33,14 +33,31 @@ class ResultadosActivity: AppCompatActivity() {
         val arrayIngredientes = intent.getStringArrayExtra("Lista_ingredientes")
         val maxReadytime = intent.getStringExtra("MaxReadyTime")
         val typeDish = intent.getStringExtra("TypeDish")
-        Log.d("array", arrayIngredientes.toString())
+        val lactosa = intent.getStringExtra("lactosa")
+        val gluten = intent.getStringExtra("gluten")
+        val mariscos = intent.getStringExtra("mariscos")
+        val dieta = intent.getStringExtra("dieta")
         val listaIngredientes = arrayIngredientes?.toMutableList() ?: mutableListOf()
-        Log.d("lista", listaIngredientes.toString())
         val strIngredientes = CrearStringredientes(listaIngredientes)
-        Log.d("str", strIngredientes.toString())
-        Log.d("tiempo", maxReadytime.toString())
+        var strintolerancias = ""
+        if (lactosa == "true") {
+            strintolerancias += "lactosa,"
+        }
+        if (gluten == "true") {
+            strintolerancias += "gluten,"
+        }
+        if (mariscos == "true") {
+            strintolerancias += "mariscos,"
+        }
+        if (strintolerancias.isNotEmpty()) {
+            strintolerancias = strintolerancias.removeSuffix(",")
+        }
 
-        obtenerRecetas(strIngredientes, maxReadytime.toString(),typeDish.toString())
+
+
+
+
+        obtenerRecetas(strIngredientes, maxReadytime.toString(),typeDish.toString(),dieta,strintolerancias)
 
     }
     private fun CrearStringredientes(listaIngredientes: List<String>): StringBuilder {
@@ -56,11 +73,14 @@ class ResultadosActivity: AppCompatActivity() {
         return strBuilder
 
     }
-    private fun obtenerRecetas(strIngredientes: StringBuilder,time: String,type: String) {
+    private fun obtenerRecetas(strIngredientes: StringBuilder,time: String,type: String,dieta : String?,intolerancias: String) {
         // Aquí iría la llamada a la API y el procesamiento de los datos
         GlobalScope.launch(Dispatchers.IO) {
             try {
-                val urlGet = "https://api.spoonacular.com/recipes/complexSearch?apiKey=3d09d02a67804174991ffe322714f9ed&includeIngredients=$strIngredientes&instructionsRequired=true&number=6&type=$type&maxReadyTime=$time"
+                var urlGet = "https://api.spoonacular.com/recipes/complexSearch?apiKey=3d09d02a67804174991ffe322714f9ed&includeIngredients=$strIngredientes&instructionsRequired=true&number=6&type=$type&maxReadyTime=$time&intolerances=$intolerancias"
+                if (dieta != null){
+                    urlGet = urlGet + "&diet=$dieta"
+                }
                 Log.i("url", urlGet)
                 val jsonString = getRequest(urlGet)
                 val response = Gson().fromJson(jsonString, ApiResponse::class.java)

@@ -52,8 +52,20 @@
         "source": "com.example.recetasapp-main-46:/drawable/rounded_card_pressed.xml"
     },
     {
+        "merged": "com.example.recetasapp-merged_res-44:/drawable_circle_shape.xml.flat",
+        "source": "com.example.recetasapp-main-46:/drawable/circle_shape.xml"
+    },
+    {
+        "merged": "com.example.recetasapp-merged_res-44:/drawable_mariscos.png.flat",
+        "source": "com.example.recetasapp-main-46:/drawable/mariscos.png"
+    },
+    {
         "merged": "com.example.recetasapp-merged_res-44:/mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "com.example.recetasapp-main-46:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.recetasapp-merged_res-44:/drawable_gluten.png.flat",
+        "source": "com.example.recetasapp-main-46:/drawable/gluten.png"
     },
     {
         "merged": "com.example.recetasapp-merged_res-44:/drawable_rounded_card_highlight.xml.flat",
@@ -100,12 +112,20 @@
         "source": "com.example.recetasapp-main-46:/layout/activity_buscador_recetas.xml"
     },
     {
+        "merged": "com.example.recetasapp-merged_res-44:/drawable_profile.png.flat",
+        "source": "com.example.recetasapp-main-46:/drawable/profile.png"
+    },
+    {
         "merged": "com.example.recetasapp-merged_res-44:/xml_data_extraction_rules.xml.flat",
         "source": "com.example.recetasapp-main-46:/xml/data_extraction_rules.xml"
     },
     {
         "merged": "com.example.recetasapp-merged_res-44:/drawable_timecardsimbol.png.flat",
         "source": "com.example.recetasapp-main-46:/drawable/timecardsimbol.png"
+    },
+    {
+        "merged": "com.example.recetasapp-merged_res-44:/layout_activity_profile.xml.flat",
+        "source": "com.example.recetasapp-main-46:/layout/activity_profile.xml"
     },
     {
         "merged": "com.example.recetasapp-merged_res-44:/mipmap-mdpi_ic_launcher_round.webp.flat",
@@ -118,6 +138,10 @@
     {
         "merged": "com.example.recetasapp-merged_res-44:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "com.example.recetasapp-main-46:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.recetasapp-merged_res-44:/drawable_lactosa.png.flat",
+        "source": "com.example.recetasapp-main-46:/drawable/lactosa.png"
     },
     {
         "merged": "com.example.recetasapp-merged_res-44:/layout_activity_resultados.xml.flat",
