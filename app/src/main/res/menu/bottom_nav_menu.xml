@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_explorar"
+        android:icon="@drawable/explorar"
+        android:title="explorar" />
+
+</menu>

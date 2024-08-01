@@ -5,7 +5,28 @@
     <color name="color25">#B0F0A5</color>
     <color name="color45">#FFD09E</color>
     <color name="color60">#FB9F9E</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorOnSecondary">#000000</color>
+    <color name="colorPrimary">#FFFFFFFF</color>
+    <color name="colorPrimaryVariant">#3700B3</color>
+    <color name="colorSecondary">#03DAC5</color>
+    <color name="colorSecondaryVariant">#018786</color>
     <color name="colorTarjetaSeleccionada">#505191A0</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
     <string name="app_name">RecetasApp</string>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+            
+            <item name="colorPrimary">@color/colorPrimary</item>
+            <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+            <item name="colorOnPrimary">@color/colorOnPrimary</item>
+            <item name="colorSecondary">@color/colorSecondary</item>
+            <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
+            <item name="colorOnSecondary">@color/colorOnSecondary</item>
+            <item name="android:windowBackground">@color/windowBackground</item>
+        </style>
+    <style name="RoundedImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
 </resources>

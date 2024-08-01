@@ -27,6 +27,8 @@
         <activity android:name=".BuscadorPorIngredientesActivity"/>
         <activity android:name=".ResultadosActivity"/>
         <activity android:name=".ProfileActivity"/>
+        <activity android:name=".RecetasParaTiActivity"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>

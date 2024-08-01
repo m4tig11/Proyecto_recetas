@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:2:1-32:12
+ADDED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:2:1-34:12
 MERGED from [androidx.compose.material:material:1.0.0] C:\Users\matia\.gradle\caches\transforms-3\d6a75c7628624d9d6cfff3fee4911d46\transformed\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity-compose:1.3.0] C:\Users\matia\.gradle\caches\transforms-3\80981a3bb5f5982253b1a4f24c7de3e2\transformed\activity-compose-1.3.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.compose.material:material-ripple:1.0.0] C:\Users\matia\.gradle\caches\transforms-3\5e62357ebbc8d64d5c36297352d438d6\transformed\material-ripple-1.0.0\AndroidManifest.xml:17:1-24:12
@@ -23,7 +23,7 @@ MERGED from [androidx.activity:activity-ktx:1.3.0] C:\Users\matia\.gradle\caches
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.1] C:\Users\matia\.gradle\caches\transforms-3\48577035208f9d1bb1b4ef01853c8d14\transformed\lifecycle-runtime-ktx-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] C:\Users\matia\.gradle\caches\transforms-3\efa05ee0bbf190cc43e201848f544e5c\transformed\lifecycle-viewmodel-ktx-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core-ktx:1.8.0] C:\Users\matia\.gradle\caches\transforms-3\058e79e02101d8724212f48cf11f2548\transformed\core-ktx-1.8.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.material:material:1.5.0] C:\Users\matia\.gradle\caches\transforms-3\5a5c5e5c7026544de9ccf8875773e4ef\transformed\material-1.5.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.6.0] C:\Users\matia\.gradle\caches\transforms-3\ca996a63798990e4faf0bb55328e1c4d\transformed\material-1.6.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\matia\.gradle\caches\transforms-3\9ad31c667af3a4d23c0ad53ffe4d0e88\transformed\constraintlayout-2.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\matia\.gradle\caches\transforms-3\5edeb6b2f97c50671381949df04f034e\transformed\appcompat-1.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\matia\.gradle\caches\transforms-3\fdada7a0993ad9e9faac779fc2cc2b5f\transformed\picasso-2.71828\AndroidManifest.xml:2:1-14:12
@@ -68,22 +68,22 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.print:print:1.0.0] C:\Users\matia\.gradle\caches\transforms-3\4b74cb5652a2f2ead9a792f2de7644b6\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\matia\.gradle\caches\transforms-3\f161d7e86f01e9d1ce5897054ce94678\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\matia\.gradle\caches\transforms-3\6e9e9ccd09bb764c8bd0f733e2677e6a\transformed\exifinterface-27.1.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:2:1-34:12
 	package
 		INJECTED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:2:1-32:12
+		ADDED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:2:1-34:12
 		INJECTED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:2:1-32:12
+		ADDED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:2:1-34:12
 		INJECTED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:2:1-32:12
+		ADDED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:2:1-34:12
 		INJECTED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:2:11-69
@@ -92,9 +92,9 @@ ADDED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidMa
 	android:name
 		ADDED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:4:22-64
 application
-ADDED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:6:5-30:19
-MERGED from [com.google.android.material:material:1.5.0] C:\Users\matia\.gradle\caches\transforms-3\5a5c5e5c7026544de9ccf8875773e4ef\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.5.0] C:\Users\matia\.gradle\caches\transforms-3\5a5c5e5c7026544de9ccf8875773e4ef\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
+ADDED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:6:5-32:19
+MERGED from [com.google.android.material:material:1.6.0] C:\Users\matia\.gradle\caches\transforms-3\ca996a63798990e4faf0bb55328e1c4d\transformed\material-1.6.0\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.material:material:1.6.0] C:\Users\matia\.gradle\caches\transforms-3\ca996a63798990e4faf0bb55328e1c4d\transformed\material-1.6.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\matia\.gradle\caches\transforms-3\9ad31c667af3a4d23c0ad53ffe4d0e88\transformed\constraintlayout-2.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\matia\.gradle\caches\transforms-3\9ad31c667af3a4d23c0ad53ffe4d0e88\transformed\constraintlayout-2.1.3\AndroidManifest.xml:9:5-20
 MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\matia\.gradle\caches\transforms-3\fdada7a0993ad9e9faac779fc2cc2b5f\transformed\picasso-2.71828\AndroidManifest.xml:7:5-12:19
@@ -163,6 +163,12 @@ activity#com.example.recetasapp.ProfileActivity
 ADDED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:29:9-52
 	android:name
 		ADDED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:29:19-50
+activity#com.example.recetasapp.RecetasParaTiActivity
+ADDED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:30:9-31:46
+	android:theme
+		ADDED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:31:13-44
+	android:name
+		ADDED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml:30:19-56
 uses-sdk
 INJECTED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\matia\StudioProjects\Proyecto_recetas\app\src\main\AndroidManifest.xml
@@ -205,8 +211,8 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] C:\Users\matia\.g
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] C:\Users\matia\.gradle\caches\transforms-3\efa05ee0bbf190cc43e201848f544e5c\transformed\lifecycle-viewmodel-ktx-2.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core-ktx:1.8.0] C:\Users\matia\.gradle\caches\transforms-3\058e79e02101d8724212f48cf11f2548\transformed\core-ktx-1.8.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.core:core-ktx:1.8.0] C:\Users\matia\.gradle\caches\transforms-3\058e79e02101d8724212f48cf11f2548\transformed\core-ktx-1.8.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.android.material:material:1.5.0] C:\Users\matia\.gradle\caches\transforms-3\5a5c5e5c7026544de9ccf8875773e4ef\transformed\material-1.5.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.5.0] C:\Users\matia\.gradle\caches\transforms-3\5a5c5e5c7026544de9ccf8875773e4ef\transformed\material-1.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.6.0] C:\Users\matia\.gradle\caches\transforms-3\ca996a63798990e4faf0bb55328e1c4d\transformed\material-1.6.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.6.0] C:\Users\matia\.gradle\caches\transforms-3\ca996a63798990e4faf0bb55328e1c4d\transformed\material-1.6.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\matia\.gradle\caches\transforms-3\9ad31c667af3a4d23c0ad53ffe4d0e88\transformed\constraintlayout-2.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\matia\.gradle\caches\transforms-3\9ad31c667af3a4d23c0ad53ffe4d0e88\transformed\constraintlayout-2.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\matia\.gradle\caches\transforms-3\5edeb6b2f97c50671381949df04f034e\transformed\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41

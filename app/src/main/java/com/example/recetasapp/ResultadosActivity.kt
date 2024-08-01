@@ -1,17 +1,12 @@
 package com.example.recetasapp
+
 import android.content.Context
-import android.content.Intent
-import android.graphics.Color
-import android.graphics.Typeface
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
-import android.widget.ImageView
-import android.widget.LinearLayout
-import android.widget.RelativeLayout
-import android.widget.TextView
-import androidx.cardview.widget.CardView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.google.gson.Gson
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -19,12 +14,8 @@ import java.io.BufferedReader
 import java.io.InputStreamReader
 import java.net.HttpURLConnection
 import java.net.URL
-import com.google.gson.Gson
-import com.squareup.picasso.Picasso
-import kotlinx.coroutines.launch
 
-
-class ResultadosActivity: AppCompatActivity() {
+class ResultadosActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -53,118 +44,42 @@ class ResultadosActivity: AppCompatActivity() {
             strintolerancias = strintolerancias.removeSuffix(",")
         }
 
-
-
-
-
-        obtenerRecetas(strIngredientes, maxReadytime.toString(),typeDish.toString(),dieta,strintolerancias)
-
+        obtenerRecetas(strIngredientes, maxReadytime.toString(), typeDish.toString(), dieta, strintolerancias)
     }
+
     private fun CrearStringredientes(listaIngredientes: List<String>): StringBuilder {
-        var strBuilder = StringBuilder()
-        listaIngredientes.forEach{ingrediente ->
+        val strBuilder = StringBuilder()
+        listaIngredientes.forEach { ingrediente ->
             strBuilder.append(ingrediente).append(",")
             Log.d("ingredientE", ingrediente.toString())
         }
         if (strBuilder.isNotEmpty()) {
-            strBuilder.deleteCharAt(strBuilder.length - 1)  // Eliminar la última coma
+            strBuilder.deleteCharAt(strBuilder.length - 1)
         }
-        Log.d("strBuilder",strBuilder.toString())
+        Log.d("strBuilder", strBuilder.toString())
         return strBuilder
-
     }
-    private fun obtenerRecetas(strIngredientes: StringBuilder,time: String,type: String,dieta : String?,intolerancias: String) {
-        // Aquí iría la llamada a la API y el procesamiento de los datos
+
+    private fun obtenerRecetas(strIngredientes: StringBuilder, time: String, type: String, dieta: String?, intolerancias: String) {
         GlobalScope.launch(Dispatchers.IO) {
             try {
                 var urlGet = "https://api.spoonacular.com/recipes/complexSearch?apiKey=3d09d02a67804174991ffe322714f9ed&includeIngredients=$strIngredientes&instructionsRequired=true&number=6&type=$type&maxReadyTime=$time&intolerances=$intolerancias"
-                if (dieta != null){
-                    urlGet = urlGet + "&diet=$dieta"
+                if (dieta != null) {
+                    urlGet += "&diet=$dieta"
                 }
                 Log.i("url", urlGet)
                 val jsonString = getRequest(urlGet)
                 val response = Gson().fromJson(jsonString, ApiResponse::class.java)
 
-                // Ahora puedes trabajar con la lista de recetas obtenida
-                response.results.forEach { recipe ->
-                    runOnUiThread {
-                        val cardView = createCardViewForRecipe(recipe)
-                        cardView.setOnClickListener {
-                            // Al hacer clic en la tarjeta, abrir la nueva actividad con los detalles de la receta
-                            val intent = Intent(this@ResultadosActivity, DetallesRecetaActivity::class.java)
-                            intent.putExtra("recipe_id", recipe.id)
-                            intent.putExtra("recipe_image", recipe.image)
-                            intent.putExtra("recipe_title", recipe.title)
-                            startActivity(intent)
-                        }
-                        findViewById<LinearLayout>(R.id.contenedorTarjetas).addView(cardView)
-                    }
+                runOnUiThread {
+                    val recyclerView = findViewById<RecyclerView>(R.id.contenedorTarjetas)
+                    recyclerView.layoutManager = LinearLayoutManager(this@ResultadosActivity)
+                    recyclerView.adapter = RecipeAdapter(this@ResultadosActivity, response.results)
                 }
             } catch (e: Exception) {
                 println("Error al obtener las recetas: ${e.message}")
             }
-    }
-}
-
-    private fun createCardViewForRecipe(recipe: Recipe): CardView {
-        val cardView = CardView(this@ResultadosActivity)
-        val layoutParams = LinearLayout.LayoutParams(
-            LinearLayout.LayoutParams.MATCH_PARENT,
-            LinearLayout.LayoutParams.WRAP_CONTENT
-        )
-        layoutParams.setMargins(16, 16, 16, 0) // Margen superior para separar las tarjetas
-        cardView.layoutParams = layoutParams
-        cardView.radius = 8f // Radio de las esquinas de la tarjeta
-        cardView.cardElevation = 8f // Elevación de la tarjeta
-
-        // Crear un RelativeLayout para la tarjeta
-        val relativeLayout = RelativeLayout(this@ResultadosActivity)
-        relativeLayout.layoutParams = RelativeLayout.LayoutParams(
-            RelativeLayout.LayoutParams.MATCH_PARENT,
-            RelativeLayout.LayoutParams.WRAP_CONTENT
-        )
-        relativeLayout.setBackgroundColor(Color.WHITE) // Fondo blanco para la tarjeta
-
-        // Crear un ImageView para la imagen de la receta
-        val imageView = ImageView(this@ResultadosActivity)
-        imageView.id = View.generateViewId() // Asignar un ID único al ImageView
-        val imageViewParams = RelativeLayout.LayoutParams(
-            120.dpToPx(this@ResultadosActivity), // Ancho de la imagen (en píxeles)
-            120.dpToPx(this@ResultadosActivity) // Altura de la imagen (en píxeles)
-        )
-        imageViewParams.addRule(RelativeLayout.ALIGN_PARENT_START)
-        imageViewParams.addRule(RelativeLayout.CENTER_VERTICAL)
-        imageView.layoutParams = imageViewParams
-        imageView.scaleType = ImageView.ScaleType.CENTER_CROP
-
-// Cargar la imagen de la receta utilizando Picasso
-        Picasso.get().load(recipe.image).into(imageView)
-
-// Agregar el ImageView al RelativeLayout
-        relativeLayout.addView(imageView)
-
-// Crear un TextView para el nombre de la receta
-        val textView = TextView(this@ResultadosActivity)
-        val textViewParams = RelativeLayout.LayoutParams(
-            RelativeLayout.LayoutParams.WRAP_CONTENT, // Ancho envuelto al contenido
-            RelativeLayout.LayoutParams.WRAP_CONTENT
-        )
-        textViewParams.addRule(RelativeLayout.RIGHT_OF, imageView.id) // Alinear a la derecha del ImageView
-        textViewParams.addRule(RelativeLayout.ALIGN_TOP, imageView.id) // Alinear al inicio vertical del ImageView
-        textViewParams.leftMargin = 16.dpToPx(this@ResultadosActivity) // Margen izquierdo
-        textViewParams.rightMargin = 16.dpToPx(this@ResultadosActivity) // Margen derecho para separar la imagen del texto
-        textView.layoutParams = textViewParams
-        textView.text = recipe.title // Establecer el texto del TextView como el nombre de la receta
-        textView.setTextColor(Color.BLACK)
-        textView.textSize = 18f // Tamaño de texto
-        textView.setTypeface(null, Typeface.BOLD) // Texto en negrita
-
-        // Agregar el TextView al RelativeLayout
-        relativeLayout.addView(textView)
-        // Agregar el RelativeLayout (tarjeta) al CardView
-        cardView.addView(relativeLayout)
-
-        return cardView
+        }
     }
 }
 
@@ -187,7 +102,6 @@ data class Recipe(
     val imageType: String
 )
 
-
 // Función para realizar la solicitud HTTP GET
 fun getRequest(urlString: String): String {
     val url = URL(urlString)
@@ -208,4 +122,3 @@ fun getRequest(urlString: String): String {
         throw Exception("Error en la solicitud HTTP: $responseCode")
     }
 }
-

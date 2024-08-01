@@ -1,4 +1,4 @@
-#Fri Jul 26 13:02:59 ART 2024
+#Thu Aug 01 10:43:07 ART 2024
 base.0=C\:\\Users\\matia\\StudioProjects\\Proyecto_recetas\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\matia\\StudioProjects\\Proyecto_recetas\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\matia\\StudioProjects\\Proyecto_recetas\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex

@@ -17,6 +17,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.util.Log
 import android.widget.ImageView
 import androidx.core.content.ContextCompat
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class BuscadorPorIngredientesActivity : AppCompatActivity() {
 
@@ -34,6 +35,21 @@ class BuscadorPorIngredientesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_buscador_recetas)
         supportActionBar?.setDisplayShowTitleEnabled(false)
+
+        val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottom_navigation)
+        bottomNavigationView.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.navigation_explorar -> {
+                    val intent = Intent(this@BuscadorPorIngredientesActivity, RecetasParaTiActivity::class.java)
+                    startActivity(intent)
+                    // Handle explore action
+                    true
+
+                }
+
+                else -> false
+            }
+        }
 
         sharedPreferences = getSharedPreferences("prefs", Context.MODE_PRIVATE)
         var lactosa: Boolean = sharedPreferences.getBoolean("lactosa", false)
